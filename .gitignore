@@ -1,0 +1,10 @@
+TSCD_processed/
+TSCD/
+output/
+.idea/
+.vscode/
+wandb/
+.viminfo
+.cursor-server
+.vscode-server
+.windsurf-server
