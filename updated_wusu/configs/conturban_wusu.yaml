@@ -1,0 +1,18 @@
+_BASE_: "base.yaml"
+SEED: 2
+
+TRAINER:
+  LR: 1e-4
+  BATCH_SIZE: 8
+
+MODEL:
+  EDGE_TYPE: 'cyclic'
+  TYPE: 'mtunetformer'
+  IN_CHANNELS: 4
+
+DATASET:
+  NAME: 'wusu'
+  ROOT: './WUSU_processed'
+DATALOADER:
+  TIMESERIES_LENGTH: 3
+  
