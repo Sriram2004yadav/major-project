@@ -1,0 +1,29 @@
+# PyTorch Weights & Checkpoints
+*.pt
+*.pth
+*.ckpt
+
+# Datasets & Imagery
+spacenet7/
+data/
+datasets/
+*.tif
+*.tiff
+*.geojson
+*.csv
+
+# Output & Logging Folders (Keeps your repo clean)
+output_*/
+eval_*/
+logs/
+tb_logs/
+runs/
+
+# Python Cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Keep the JSON metric files we just made!
+!final_clean_sota_metrics.json
+!final_sota_metrics.json

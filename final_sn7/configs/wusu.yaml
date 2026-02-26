@@ -1,0 +1,16 @@
+_BASE_: "base.yaml"
+
+MODEL:
+  IN_CHANNELS: 4  # WUSU uses 4 bands (RGB + NIR)
+  REFINER:
+    HIDDEN_CH: 16 # Lighter capacity for fewer timestamps
+
+DATASET:
+  NAME: 'wusu'
+  ROOT: './WUSU_processed'
+  TRAIN_IDS: ['wuhan_train_01', 'wuhan_train_02'] # Replace with your actual IDs
+  VAL_IDS: ['wuhan_val_01']
+
+DATALOADER:
+  TIMESERIES_LENGTH: 3
+  EDGE_TYPE: 'cyclic'
